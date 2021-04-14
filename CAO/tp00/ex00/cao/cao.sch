@@ -1,0 +1,472 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L cao:MoutingHole H1
+U 1 1 5FC0A323
+P 7900 5200
+F 0 "H1" H 8016 5246 50  0000 L CNN
+F 1 "MoutingHole" H 8016 5155 50  0000 L CNN
+F 2 "cao:MountingHole2.1mm" H 8040 5250 50  0001 C CNN
+F 3 "" H 8040 5250 50  0001 C CNN
+	1    7900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5FC12C65
+P 1250 1950
+F 0 "#PWR0101" H 1250 1800 50  0001 C CNN
+F 1 "+5V" H 1265 2123 50  0000 C CNN
+F 2 "" H 1250 1950 50  0001 C CNN
+F 3 "" H 1250 1950 50  0001 C CNN
+	1    1250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1950 1250 2050
+Wire Wire Line
+	1250 2050 1350 2050
+$Comp
+L cao:Condensateur C5
+U 1 1 5FC1E5A6
+P 2500 1250
+F 0 "C5" H 2250 1300 50  0000 L CNN
+F 1 "10uF" H 2200 1200 50  0000 L CNN
+F 2 "cao:C" H 2300 1250 50  0001 C CNN
+F 3 "" H 2300 1250 50  0001 C CNN
+	1    2500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L cao:Condensateur C4
+U 1 1 5FC2027F
+P 2900 1250
+F 0 "C4" H 3031 1321 50  0000 L CNN
+F 1 "10uF" H 3031 1230 50  0000 L CNN
+F 2 "cao:C" H 2700 1250 50  0001 C CNN
+F 3 "" H 2700 1250 50  0001 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5FC22B08
+P 2900 1150
+F 0 "#PWR0103" H 2900 1000 50  0001 C CNN
+F 1 "+5V" H 2915 1323 50  0000 C CNN
+F 2 "" H 2900 1150 50  0001 C CNN
+F 3 "" H 2900 1150 50  0001 C CNN
+	1    2900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FC2378B
+P 2900 1300
+F 0 "#PWR0105" H 2900 1050 50  0001 C CNN
+F 1 "GND" H 2905 1127 50  0000 C CNN
+F 2 "" H 2900 1300 50  0001 C CNN
+F 3 "" H 2900 1300 50  0001 C CNN
+	1    2900 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1150 2500 1150
+Connection ~ 2900 1150
+Wire Wire Line
+	2900 1300 2500 1300
+Connection ~ 2900 1300
+$Comp
+L power:GND #PWR0106
+U 1 1 5FC264BF
+P 1950 4700
+F 0 "#PWR0106" H 1950 4450 50  0001 C CNN
+F 1 "GND" H 1955 4527 50  0000 C CNN
+F 2 "" H 1950 4700 50  0001 C CNN
+F 3 "" H 1950 4700 50  0001 C CNN
+	1    1950 4700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2600 4400
+NoConn ~ 2600 4300
+NoConn ~ 2600 4200
+NoConn ~ 2600 4100
+NoConn ~ 2600 3900
+NoConn ~ 2600 3400
+NoConn ~ 2600 3300
+NoConn ~ 2600 3200
+NoConn ~ 2600 3100
+NoConn ~ 2600 3000
+NoConn ~ 2600 2900
+Wire Wire Line
+	2600 3500 3200 3500
+Wire Wire Line
+	2600 3700 3200 3700
+Wire Wire Line
+	2600 3800 3200 3800
+Text Label 2600 3700 0    50   ~ 0
+MCU_RX
+Text Label 2600 3800 0    50   ~ 0
+MCU_TX
+Text Label 2600 4000 0    50   ~ 0
+BUT_0
+Text Label 2600 3500 0    50   ~ 0
+RESET
+Entry Wire Line
+	3200 3500 3300 3400
+Entry Wire Line
+	3200 3700 3300 3600
+Entry Wire Line
+	3200 3800 3300 3700
+Entry Wire Line
+	3200 4000 3300 3900
+Wire Bus Line
+	3300 3400 3400 3300
+Wire Bus Line
+	3400 3300 4100 3300
+Wire Bus Line
+	4100 3300 4200 3400
+Entry Wire Line
+	4200 2950 4300 3050
+Entry Wire Line
+	4200 3950 4300 4050
+Entry Wire Line
+	4200 5150 4300 5250
+Entry Wire Line
+	4200 4700 4300 4800
+Entry Wire Line
+	4200 4100 4300 4200
+Entry Wire Line
+	4200 4250 4300 4350
+Wire Wire Line
+	4300 3050 4700 3050
+Wire Wire Line
+	4300 4050 4700 4050
+Wire Wire Line
+	4300 4200 4700 4200
+Wire Wire Line
+	4300 4350 4700 4350
+Wire Wire Line
+	4300 4800 4700 4800
+Wire Wire Line
+	4300 5250 4700 5250
+Text Label 4300 3050 0    50   ~ 0
+LED_3
+Text Label 4400 4050 0    50   ~ 0
+RESET
+Text Label 4400 4200 0    50   ~ 0
+MCU_TX
+Text Label 4400 4350 0    50   ~ 0
+MCU_RX
+$Sheet
+S 4700 2950 650  200 
+U 5FC3E0B6
+F0 "LED_3" 39
+F1 "led.sch" 39
+F2 "input" I L 4700 3050 50 
+$EndSheet
+$Sheet
+S 4700 4700 650  200 
+U 5FC3EC14
+F0 "button_reset" 50
+F1 "button.sch" 50
+F2 "out" I L 4700 4800 50 
+$EndSheet
+$Sheet
+S 4700 5150 650  200 
+U 5FC3F931
+F0 "but_0" 50
+F1 "button.sch" 50
+F2 "out" I L 4700 5250 50 
+$EndSheet
+Wire Wire Line
+	2600 2000 3200 2000
+Wire Wire Line
+	2600 2100 3200 2100
+Wire Wire Line
+	2600 2200 3200 2200
+Wire Wire Line
+	2600 2300 3200 2300
+Text Label 2600 2000 0    50   ~ 0
+LED_0
+Text Label 2600 2100 0    50   ~ 0
+LED_1
+Text Label 2600 2200 0    50   ~ 0
+LED_2
+Text Label 2600 2300 0    50   ~ 0
+LED_3
+Text Label 2950 2300 0    50   ~ 0
+MOSI
+Entry Wire Line
+	3200 2000 3300 1900
+Entry Wire Line
+	3200 2100 3300 2000
+Entry Wire Line
+	3200 2200 3300 2100
+Entry Wire Line
+	3200 2300 3300 2200
+Wire Bus Line
+	3300 1800 3400 1700
+Wire Bus Line
+	3400 1700 4100 1700
+Wire Bus Line
+	4100 1700 4200 1800
+Text Label 2600 2400 0    50   ~ 0
+MISO
+Text Label 2600 2500 0    50   ~ 0
+SCK
+Wire Wire Line
+	2600 2700 3200 2700
+$Comp
+L cao:Condensateur C1
+U 1 1 5FC50F64
+P 3200 2900
+F 0 "C1" H 2950 2950 50  0000 L CNN
+F 1 "22pF" H 2950 2850 50  0000 L CNN
+F 2 "cao:C" H 3000 2900 50  0001 C CNN
+F 3 "" H 3000 2900 50  0001 C CNN
+	1    3200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2700 3200 2800
+Wire Wire Line
+	3200 2950 3400 2950
+$Comp
+L cao:Quartz Y1
+U 1 1 5FC55298
+P 3400 2800
+F 0 "Y1" V 3400 2750 35  0000 L CNN
+F 1 "16MHz" H 3750 2900 50  0000 L CNN
+F 2 "cao:crystal" V 4600 2700 50  0001 C CNN
+F 3 "" V 4600 2700 50  0001 C CNN
+	1    3400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2950 3600 2950
+Connection ~ 3400 2950
+$Comp
+L cao:Condensateur C2
+U 1 1 5FC58231
+P 3600 2900
+F 0 "C2" H 3731 2971 50  0000 L CNN
+F 1 "22pF" H 3731 2880 50  0000 L CNN
+F 2 "cao:C" H 3400 2900 50  0001 C CNN
+F 3 "" H 3400 2900 50  0001 C CNN
+	1    3600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2800 3200 2800
+Connection ~ 3200 2800
+Wire Wire Line
+	3500 2800 3600 2800
+Wire Wire Line
+	2600 2600 3200 2600
+$Comp
+L power:GND #PWR0107
+U 1 1 5FC5AADE
+P 3400 2650
+F 0 "#PWR0107" H 3400 2400 50  0001 C CNN
+F 1 "GND" H 3405 2477 50  0000 C CNN
+F 2 "" H 3400 2650 50  0001 C CNN
+F 3 "" H 3400 2650 50  0001 C CNN
+	1    3400 2650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3200 2600 3200 2400
+Wire Wire Line
+	3200 2400 3600 2400
+Wire Wire Line
+	3600 2400 3600 2800
+Connection ~ 3600 2800
+Entry Wire Line
+	4200 1900 4300 2000
+Entry Wire Line
+	4200 2250 4300 2350
+Entry Wire Line
+	4200 2600 4300 2700
+Wire Wire Line
+	4300 2700 4700 2700
+Wire Wire Line
+	4300 2350 4700 2350
+Wire Wire Line
+	4300 2000 4700 2000
+$Sheet
+S 4700 2250 650  200 
+U 5FC634C5
+F0 "LED_1" 39
+F1 "led.sch" 39
+F2 "input" I L 4700 2350 50 
+$EndSheet
+$Sheet
+S 4700 2600 650  200 
+U 5FC6671E
+F0 "LED_2" 39
+F1 "led.sch" 39
+F2 "input" I L 4700 2700 50 
+$EndSheet
+Text Label 4300 2700 0    50   ~ 0
+LED_2
+Text Label 4300 2350 0    50   ~ 0
+LED_1
+Text Label 4300 2000 0    50   ~ 0
+LED_0
+$Comp
+L cao:AVR-ISP-6 J2
+U 1 1 5FC6DE82
+P 7050 2250
+F 0 "J2" H 7431 2296 50  0000 L CNN
+F 1 "AVR-ISP-6" H 7431 2205 50  0000 L CNN
+F 2 "cao:PinHeaderMale2.54mm3x2" H 7318 2690 50  0001 C CNN
+F 3 "" H 7318 2690 50  0001 C CNN
+	1    7050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5FC76621
+P 7200 1750
+F 0 "#PWR0108" H 7200 1600 50  0001 C CNN
+F 1 "+5V" H 7215 1923 50  0000 C CNN
+F 2 "" H 7200 1750 50  0001 C CNN
+F 3 "" H 7200 1750 50  0001 C CNN
+	1    7200 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5FC778AD
+P 7200 2750
+F 0 "#PWR0109" H 7200 2500 50  0001 C CNN
+F 1 "GND" H 7205 2577 50  0000 C CNN
+F 2 "" H 7200 2750 50  0001 C CNN
+F 3 "" H 7200 2750 50  0001 C CNN
+	1    7200 2750
+	1    0    0    -1  
+$EndComp
+Text Label 6650 2100 2    50   ~ 0
+MISO
+Text Label 6650 2200 2    50   ~ 0
+MOSI
+Text Label 6650 2300 2    50   ~ 0
+SCK
+Text Label 6650 2400 2    50   ~ 0
+RESET
+$Sheet
+S 4700 3900 650  600 
+U 5FC3E6C9
+F0 "usb_flasher" 50
+F1 "usb_flasher.sch" 50
+F2 "tx" I L 4700 4200 50 
+F3 "rx" I L 4700 4350 50 
+F4 "reset" I L 4700 4050 50 
+$EndSheet
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FC8672F
+P 6900 5100
+F 0 "#FLG0101" H 6900 5175 50  0001 C CNN
+F 1 "PWR_FLAG" H 6900 5273 50  0000 C CNN
+F 2 "" H 6900 5100 50  0001 C CNN
+F 3 "~" H 6900 5100 50  0001 C CNN
+	1    6900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5FC86B18
+P 6900 5100
+F 0 "#PWR0104" H 6900 4850 50  0001 C CNN
+F 1 "GND" H 6905 4927 50  0000 C CNN
+F 2 "" H 6900 5100 50  0001 C CNN
+F 3 "" H 6900 5100 50  0001 C CNN
+	1    6900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 5FC87832
+P 6450 5100
+F 0 "#PWR0110" H 6450 4950 50  0001 C CNN
+F 1 "+5V" H 6465 5273 50  0000 C CNN
+F 2 "" H 6450 5100 50  0001 C CNN
+F 3 "" H 6450 5100 50  0001 C CNN
+	1    6450 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FC87C08
+P 6450 5100
+F 0 "#FLG0102" H 6450 5175 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 5273 50  0000 C CNN
+F 2 "" H 6450 5100 50  0001 C CNN
+F 3 "~" H 6450 5100 50  0001 C CNN
+	1    6450 5100
+	1    0    0    1   
+$EndComp
+$Sheet
+S 4700 1900 650  200 
+U 5FC632E9
+F0 "LED_0" 39
+F1 "led.sch" 39
+F2 "input" I L 4700 2000 50 
+$EndSheet
+Connection ~ 1900 1750
+$Comp
+L power:+5V #PWR0102
+U 1 1 5FC1B3A9
+P 1900 1750
+F 0 "#PWR0102" H 1900 1600 50  0001 C CNN
+F 1 "+5V" H 1915 1923 50  0000 C CNN
+F 2 "" H 1900 1750 50  0001 C CNN
+F 3 "" H 1900 1750 50  0001 C CNN
+	1    1900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1750 1900 1750
+$Comp
+L cao:ATmega328P-AU U1
+U 1 1 5FC031D7
+P 1950 3250
+F 0 "U1" H 1600 1800 50  0000 C CNN
+F 1 "ATmega328P-AU" H 2450 1800 50  0000 C CNN
+F 2 "cao:atmega" H 6800 750 50  0001 C CNN
+F 3 "" H 6800 750 50  0001 C CNN
+	1    1950 3250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 2250
+NoConn ~ 1350 2350
+Wire Wire Line
+	3200 4000 2600 4000
+Text Label 4400 4800 0    50   ~ 0
+RESET
+Text Label 4400 5250 0    50   ~ 0
+BUT_0
+Wire Bus Line
+	3300 3400 3300 3900
+Wire Bus Line
+	4200 1800 4200 2950
+Wire Bus Line
+	3300 1800 3300 2200
+Wire Bus Line
+	4200 3400 4200 5150
+$EndSCHEMATC

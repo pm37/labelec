@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name cao-rescue)(type Legacy)(uri ${KIPRJMOD}/cao-rescue.lib)(options "")(descr ""))
+)

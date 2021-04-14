@@ -1,0 +1,91 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0119
+U 1 1 5FBF7775
+P 1500 860
+AR Path="/5FC06EBF/5FBF7775" Ref="#PWR0119"  Part="1" 
+AR Path="/5FC06EC1/5FBF7775" Ref="#PWR0115"  Part="1" 
+AR Path="/5FC3E6C9/5FBF7775" Ref="#PWR0112"  Part="1" 
+AR Path="/5FC3EC14/5FBF7775" Ref="#PWR0114"  Part="1" 
+AR Path="/5FC3F931/5FBF7775" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0114" H 1500 710 50  0001 C CNN
+F 1 "+5V" H 1515 1033 50  0000 C CNN
+F 2 "" H 1500 860 50  0001 C CNN
+F 3 "" H 1500 860 50  0001 C CNN
+	1    1500 860 
+	1    0    0    -1  
+$EndComp
+$Comp
+L cao:Resistor R1
+U 1 1 5FBF86D2
+P 1500 980
+AR Path="/5FC06EBF/5FBF86D2" Ref="R1"  Part="1" 
+AR Path="/5FC06EC1/5FBF86D2" Ref="R2"  Part="1" 
+AR Path="/5FBF86D2" Ref="R2"  Part="1" 
+AR Path="/5FC3E6C9/5FBF86D2" Ref="R?"  Part="1" 
+AR Path="/5FC3EC14/5FBF86D2" Ref="R1"  Part="1" 
+AR Path="/5FC3F931/5FBF86D2" Ref="R2"  Part="1" 
+F 0 "R1" V 1454 1038 50  0000 L CNN
+F 1 "10K" V 1545 1038 50  0000 L CNN
+F 2 "cao:R_0603" H 1500 1130 50  0001 C CNN
+F 3 "" H 1500 1130 50  0001 C CNN
+	1    1500 980 
+	0    1    -1   0   
+$EndComp
+$Comp
+L cao:SW_Push SW1
+U 1 1 5FBF99D4
+P 1500 1440
+AR Path="/5FC06EBF/5FBF99D4" Ref="SW1"  Part="1" 
+AR Path="/5FC06EC1/5FBF99D4" Ref="SW2"  Part="1" 
+AR Path="/5FBF99D4" Ref="SW2"  Part="1" 
+AR Path="/5FC3E6C9/5FBF99D4" Ref="SW?"  Part="1" 
+AR Path="/5FC3EC14/5FBF99D4" Ref="SW1"  Part="1" 
+AR Path="/5FC3F931/5FBF99D4" Ref="SW2"  Part="1" 
+F 0 "SW1" H 1668 1486 50  0000 L CNN
+F 1 "SW_Push" H 1668 1395 50  0000 L CNN
+F 2 "cao:Btn" H 1500 990 50  0001 C CNN
+F 3 "" H 1500 990 50  0001 C CNN
+	1    1500 1440
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1100 1500 1170
+Text HLabel 1350 1170 0    50   Input ~ 0
+out
+Wire Wire Line
+	1350 1170 1500 1170
+Connection ~ 1500 1170
+Wire Wire Line
+	1500 1170 1500 1240
+$Comp
+L power:GND #PWR0120
+U 1 1 5FBFAF5E
+P 1500 1640
+AR Path="/5FC06EBF/5FBFAF5E" Ref="#PWR0120"  Part="1" 
+AR Path="/5FC06EC1/5FBFAF5E" Ref="#PWR0116"  Part="1" 
+AR Path="/5FC3E6C9/5FBFAF5E" Ref="#PWR0113"  Part="1" 
+AR Path="/5FC3EC14/5FBFAF5E" Ref="#PWR0115"  Part="1" 
+AR Path="/5FC3F931/5FBFAF5E" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0115" H 1500 1390 50  0001 C CNN
+F 1 "GND" H 1505 1467 50  0000 C CNN
+F 2 "" H 1500 1640 50  0001 C CNN
+F 3 "" H 1500 1640 50  0001 C CNN
+	1    1500 1640
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
